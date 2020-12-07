@@ -3,9 +3,147 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Hello Coursera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h1{
+            text-align:center;
+        }
+        .main{
+           padding-top:80px;
+        }
+        .chicken{
+            background-color:lightblue;
+            width:460px;
+            height:150px;
+            border:2px solid black;
+            float:left;
+            margin-left:30px;
+        }
+        .ch {
+            float: right;
+            background-color: lightpink;
+            width: 120px;
+            height: 25px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+            border-right-width:0px;
+            border-top-width:0px;
+        }
+        .chdetail{
+            padding-top:25px;
+            font-size:15px;
+            margin-top:10px;
+            margin-left:15px;
+            margin-right:12px;
+        }
+        .beef {
+            background-color: lightblue;
+            width: 460px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            margin-left:30px;
+        }
+        .bf {
+            float: right;
+            background-color: orangered;
+            width: 120px;
+            height: 25px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+            border-right-width: 0px;
+            border-top-width: 0px;
+        }
+        .bfdetail {
+            padding-top: 25px;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 12px;
+        }        
+        .sushi {
+            background-color: lightblue;
+            width: 460px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            margin-left:30px;
+        }
+        .su {
+            float: right;
+            background-color: navajowhite;
+            width: 120px;
+            height: 25px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid black;
+            border-right-width: 0px;
+            border-top-width: 0px;
+        }
+        .sudetail {
+            padding-top: 25px;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 12px;
+        }
+        @media(min-width:992px){
+            .chicken, .beef, .sushi{
+
+            }
+        }
+        @media(min-width:768px) and (max-width:991px){
+            h1{
+                text-align:center;
+            }
+            .chicken, .beef, .sushi{
+                float:left;
+                margin-bottom:10px;
+            }
+            .chicken, .beef{
+                width:40%;
+                height:100%;
+            }
+            .sushi{
+                width:83.5%;
+            }
+        }
+        @media(max-width:767px){
+            body{
+                
+            }
+            .chicken, .beef, .sushi{
+                float:none;
+                margin-bottom:10px;
+                width:33.33%;
+                height:100%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Hello</p>
+    <h1>Our menu</h1>
+    <div class="main">
+        <div class="chicken">
+            <div class="ch">Chicken</div>
+            <div class="chdetail">The chicken is a type of domesticated fowl, a subspecies of the red junglefowl. Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018. up from more than 19 billion in 2011. There are more chickens in the world than any other bird or domesticated fowl.</div>
+        </div>
+        <div class="beef">
+            <div class="bf">Beef</div>
+            <div class="bfdetail">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of protein and nutrients.Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.</div>
+        </div>
+        <div class="sushi">
+            <div class="su">Sushi</div>
+            <div class="sudetail">Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari, or sumeshi.</div>
+        </div>
+    </div>
 </body>
 </html>
